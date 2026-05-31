@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Amshwa Group</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#4c1d95",
+                        "surface-container": "#16082e",
+                        "on-secondary-fixed": "#f5f3ff",
+                        "tertiary-fixed-dim": "#2e1065",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#a78bfa",
+                        "inverse-on-surface": "#000000",
+                        "background": "#0a0118",
+                        "surface-container-highest": "#1e1b4b",
+                        "outline-variant": "#2e1065",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#ddd6fe",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#4c1d95",
+                        "on-primary-container": "#c4b5fd",
+                        "surface-bright": "#16082e",
+                        "secondary-container": "#2e1065",
+                        "on-primary-fixed": "#f5f3ff",
+                        "surface": "#0a0118",
+                        "on-surface": "#f8fafc",
+                        "outline": "#4c1d95",
+                        "inverse-primary": "#c4b5fd",
+                        "surface-container-low": "#16082e",
+                        "surface-variant": "#1e1b4b",
+                        "secondary": "#8b5cf6",
+                        "on-background": "#f8fafc",
+                        "on-tertiary-container": "#ede9fe",
+                        "secondary-fixed-dim": "#7c3aed",
+                        "primary-fixed-dim": "#4c1d95",
+                        "surface-dim": "#0a0118",
+                        "primary-fixed": "#ddd6fe",
+                        "on-secondary": "#000000",
+                        "tertiary-container": "#2e1065",
+                        "on-tertiary-fixed-variant": "#ddd6fe",
+                        "tertiary": "#2e1065",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#000000",
+                        "inverse-surface": "#f8fafc",
+                        "surface-container-high": "#1e1b4b",
+                        "secondary-fixed": "#c4b5fd",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ede9fe",
+                        "primary-container": "#2e1065",
+                        "on-surface-variant": "#cbd5e1",
+                        "on-tertiary-fixed": "#f5f3ff",
+                        "on-secondary-container": "#f5f3ff",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "md": "24px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "xl": "80px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .premium-shadow {
+            box-shadow: 0 8px 30px rgba(26, 43, 75, 0.08);
+        }
+        .violet-gradient-text {
+            background: linear-gradient(135deg, #4c1d95 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background font-body-md text-on-surface selection:bg-secondary/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-[0_8px_30px_rgb(26,43,75,0.04)] h-20">
+<div class="max-w-[1280px] mx-auto px-8 flex items-center justify-between h-full">
+<div class="flex items-center gap-3 cursor-pointer">
+<span class="material-symbols-outlined text-[#4c1d95] text-3xl">corporate_fare</span>
+<span class="text-2xl font-bold tracking-tight text-[#4c1d95] font-display-lg">Amshwa Group</span>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-slate-500 font-medium hover:text-[#7c3aed] transition-colors duration-300 font-label-md" href="index.html">Home</a>
+<a class="text-[#4c1d95] font-semibold border-b-2 border-[#7c3aed] pb-1 font-label-md" href="services.html">Services</a>
+<a class="text-slate-500 font-medium hover:text-[#7c3aed] transition-colors duration-300 font-label-md" href="portfolio.html">Portfolio</a>
+<a class="text-slate-500 font-medium hover:text-[#7c3aed] transition-colors duration-300 font-label-md" href="about.html">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="hidden sm:block bg-[#4c1d95] text-white px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-all cursor-pointer font-label-md text-center">
+                Contact Us
+            </a>
+<button id="mobile-menu-button" class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 p-8 space-y-6 animate-in slide-in-from-top duration-300">
+<a class="block text-slate-500 font-medium pl-4" href="index.html">Home</a>
+<a class="block text-[#4c1d95] font-semibold border-l-4 border-[#7c3aed] pl-4" href="services.html">Services</a>
+<a class="block text-slate-500 font-medium pl-4" href="portfolio.html">Portfolio</a>
+<a class="block text-slate-500 font-medium pl-4" href="about.html">About</a>
+<a class="block bg-primary text-white px-6 py-3 rounded-lg font-label-md text-center" href="contact.html">Contact Us</a>
+</div>
+</header>
+<script>
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        const icon = menuButton.querySelector('span');
+        icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+    });
+</script>
+<main class="pt-32 pb-xl">
+<!-- Hero Section -->
+<section class="max-w-[1280px] mx-auto px-8 mb-xl">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1.5 bg-secondary-fixed text-on-secondary-fixed rounded-full text-label-md mb-6 uppercase tracking-widest">Global Ecosystem</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-6 leading-tight">Excellence Across <span class="violet-gradient-text">Diverse Disciplines.</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Amshwa Group integrates high-level consultancy with premium lifestyle services, ensuring our clients receive unparalleled expertise whether scaling a digital enterprise or seeking personal care.
+                </p>
+</div>
+</section>
+<!-- Services Grid -->
+<div class="max-w-[1280px] mx-auto px-8 space-y-xl">
+<!-- IT Consultancy Section -->
+<section>
+<div class="flex items-center gap-4 mb-md">
+<div class="h-px flex-1 bg-slate-200"></div>
+<h2 class="font-headline-lg text-headline-lg text-primary">IT Consultancy</h2>
+<div class="h-px flex-1 bg-slate-200"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Web Development -->
+<div class="bg-white p-md rounded-xl premium-shadow border border-slate-50 group hover:-translate-y-1 transition-all duration-300">
+<div class="w-14 h-14 bg-primary-container/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">developer_mode</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Web Development</h3>
+<p class="text-on-surface-variant mb-6 font-body-md">Architecting scalable, responsive, and high-performance web ecosystems tailored to modern business demands.</p>
+<ul class="space-y-3 mb-8 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Enterprise Solutions</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> E-commerce Platforms</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Progressive Web Apps</li>
+</ul>
+<button class="w-full py-3 px-4 border border-[#7c3aed] text-[#7c3aed] font-semibold rounded-lg hover:bg-[#7c3aed] hover:text-white transition-colors font-label-md">Learn More</button>
+</div>
+<!-- App Development -->
+<div class="bg-white p-md rounded-xl premium-shadow border border-slate-50 group hover:-translate-y-1 transition-all duration-300">
+<div class="w-14 h-14 bg-primary-container/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">smartphone</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">App Development</h3>
+<p class="text-on-surface-variant mb-6 font-body-md">Building intuitive mobile experiences for iOS and Android that engage users and drive institutional growth.</p>
+<ul class="space-y-3 mb-8 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Native iOS &amp; Android</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Cross-Platform (Flutter)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> UI/UX Optimization</li>
+</ul>
+<button class="w-full py-3 px-4 border border-[#7c3aed] text-[#7c3aed] font-semibold rounded-lg hover:bg-[#7c3aed] hover:text-white transition-colors font-label-md">Learn More</button>
+</div>
+<!-- Cloud Solutions -->
+<div class="bg-white p-md rounded-xl premium-shadow border border-slate-50 group hover:-translate-y-1 transition-all duration-300">
+<div class="w-14 h-14 bg-primary-container/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">cloud_done</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Cloud Solutions</h3>
+<p class="text-on-surface-variant mb-6 font-body-md">Optimizing infrastructure with secure, resilient cloud architecture designed for the future of work.</p>
+<ul class="space-y-3 mb-8 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> AWS &amp; Azure Mgmt</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Cloud Migration</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Data Security</li>
+</ul>
+<button class="w-full py-3 px-4 border border-[#7c3aed] text-[#7c3aed] font-semibold rounded-lg hover:bg-[#7c3aed] hover:text-white transition-colors font-label-md">Learn More</button>
+</div>
+</div>
+</section>
+<!-- Travel Consultancy Section -->
+<section>
+<div class="flex items-center gap-4 mb-md">
+<div class="h-px flex-1 bg-slate-200"></div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Travel Consultancy</h2>
+<div class="h-px flex-1 bg-slate-200"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Flight & Hotel Booking -->
+<div class="bg-white p-md rounded-xl premium-shadow border border-slate-50 group hover:-translate-y-1 transition-all duration-300">
+<div class="w-14 h-14 bg-primary-container/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">flight_takeoff</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Flight &amp; Hotel Booking</h3>
+<p class="text-on-surface-variant mb-6 font-body-md">Hassle-free reservations worldwide with access to exclusive rates and personalized concierge support.</p>
+<ul class="space-y-3 mb-8 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Global Flight Routes</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Luxury Accommodations</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> 24/7 Booking Support</li>
+</ul>
+<button class="w-full py-3 px-4 border border-[#7c3aed] text-[#7c3aed] font-semibold rounded-lg hover:bg-[#7c3aed] hover:text-white transition-colors font-label-md">Explore Options</button>
+</div>
+<!-- Visa Assistance -->
+<div class="bg-white p-md rounded-xl premium-shadow border border-slate-50 group hover:-translate-y-1 transition-all duration-300">
+<div class="w-14 h-14 bg-primary-container/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">assignment_turned_in</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Visa Assistance</h3>
+<p class="text-on-surface-variant mb-6 font-body-md">Expert guidance for student, tourist, and business visas, ensuring a smooth and successful application process.</p>
+<ul class="space-y-3 mb-8 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Student &amp; Tourist Visas</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Business Entry Permits</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Document Verification</li>
+</ul>
+<button class="w-full py-3 px-4 border border-[#7c3aed] text-[#7c3aed] font-semibold rounded-lg hover:bg-[#7c3aed] hover:text-white transition-colors font-label-md">Start Application</button>
+</div>
+<!-- Tour Packages -->
+<div class="bg-white p-md rounded-xl premium-shadow border border-slate-50 group hover:-translate-y-1 transition-all duration-300">
+<div class="w-14 h-14 bg-primary-container/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">travel_explore</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-3">Tour Packages</h3>
+<p class="text-on-surface-variant mb-6 font-body-md">Custom-crafted itineraries for domestic and international travel, designed for unforgettable experiences.</p>
+<ul class="space-y-3 mb-8 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Bespoke Itineraries</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Group &amp; Solo Travel</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-[#7c3aed]">check_circle</span> Cultural Expeditions</li>
+</ul>
+<button class="w-full py-3 px-4 border border-[#7c3aed] text-[#7c3aed] font-semibold rounded-lg hover:bg-[#7c3aed] hover:text-white transition-colors font-label-md">View Packages</button>
+</div>
+</div>
+</section>
+<!-- Car Wash Section (Bento Style) -->
+<section class="bg-primary rounded-3xl overflow-hidden p-8 md:p-16">
+<div class="flex flex-col md:flex-row gap-12 items-center mb-16">
+<div class="flex-1 text-white">
+<span class="text-[#7c3aed] font-bold tracking-widest text-sm uppercase mb-4 block">Premium Auto Care</span>
+<h2 class="font-display-lg text-display-lg mb-6">Master Detailing &amp; Care</h2>
+<p class="text-on-primary-container font-body-lg mb-8">We treat your vehicle with the same precision and attention to detail as our corporate strategies. Experience the pinnacle of automotive restoration.</p>
+<div class="grid grid-cols-2 gap-6">
+<div class="bg-white/5 p-4 rounded-xl backdrop-blur-sm">
+<span class="material-symbols-outlined text-[#7c3aed] mb-2">sanitizer</span>
+<h4 class="font-semibold">Deep Clean</h4>
+</div>
+<div class="bg-white/5 p-4 rounded-xl backdrop-blur-sm">
+<span class="material-symbols-outlined text-[#7c3aed] mb-2">auto_fix_high</span>
+<h4 class="font-semibold">Paint Care</h4>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl relative">
+<img class="w-full h-full object-cover" data-alt="A professional high-end car detailing studio with dramatic top-down lighting reflecting off a polished black luxury sedan. Technicians in dark uniforms work meticulously on the vehicle's interior. The setting is ultra-modern with polished concrete floors and a minimalist aesthetic. The lighting is cold blue and crisp white, emphasizing a clean and premium environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYrwOlxwhhp4SAWHMPKRHwa35MaPxtnVZ86Jce97n6Hd5A4dAFxAWdzLncjOtmEC7YchCXKNuqgSJ0Z2mb2vL2zGMJgRSnydDFQkfujrKHSKoQsJrjQY0CoHNYpQeBQxzd2F2JnJev9XBB9z_hQlzyvvo6ONwcBC7_rWHgbun4f50U8KGjlYqZPpYoXEpNrfB_nbwgfMwEfKZs1CfuloR6xcFv10msVmN87W-64JZziVLCzfolJwl8VoNB1trAcvisl6bLNpBpXgQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white rounded-2xl p-md flex flex-col md:flex-row gap-6 items-start">
+<div class="bg-primary/5 p-4 rounded-xl shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">local_car_wash</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-2">Interior &amp; Exterior Cleaning</h3>
+<p class="text-slate-600 mb-4">Meticulous removal of contaminants using pH-neutral chemicals and steam sterilization for a factory-fresh feel.</p>
+<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">Request Service <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-md flex flex-col md:flex-row gap-6 items-start">
+<div class="bg-primary/5 p-4 rounded-xl shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl">diamond</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-primary mb-2">Premium Detailing</h3>
+<p class="text-slate-600 mb-4">Multi-stage paint correction, ceramic coating, and leather conditioning for long-lasting protection and brilliance.</p>
+<button class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all">Request Service <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Consultancy Section -->
+<section>
+<div class="flex items-center justify-between mb-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Education Consultancy</h2>
+<p class="text-on-surface-variant">Navigating global academic pathways with precision.</p>
+</div>
+<button class="hidden md:block py-2.5 px-6 bg-primary text-white rounded-full text-label-md font-bold">Book Consultation</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Study Abroad -->
+<div class="group cursor-pointer">
+<div class="h-64 rounded-2xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A bright, modern university campus library with large glass windows overlooking a manicured green lawn. Students of diverse backgrounds are seen engaged in collaborative study sessions. The atmosphere is academic, aspirational, and filled with natural golden hour sunlight. The colors are soft, focusing on greens, wood textures, and clean white architectural lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9jxCAuwlO-8HdJSgwXbuj2Qj5x4J1JMDckTX5Rzf27RnQfdpTokPEOFOXm1Y0H5IwL4kN9wj5EVxTfGjFevpSbz9eSe4MuwifsMMmLei1YrmThjNdqdb4pvxcrhzLiGyoSwnqy2w4fbxBoVCAbfVyZBZPKQU8vrcOXzBUOK8qXStqSSpM3fl32BZyd4K7jmEjjXYCz9u5y289jBH_3fhaLVNkMrtVt9uASpkEllSJrrHe28D1OYzRwGWfoKxO-7ODMWALWN5XyKE"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-xs font-bold text-primary">INTERNATIONAL</div>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 group-hover:text-[#7c3aed] transition-colors">Study Abroad</h3>
+<p class="text-on-surface-variant font-body-md mb-4">Strategic mapping of global universities and course selection aligned with international market trends.</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">east</span>
+</div>
+<!-- Admission Guidance -->
+<div class="group cursor-pointer">
+<div class="h-64 rounded-2xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A close-up of high-quality stationary, a fountain pen, and an acceptance letter on a polished mahogany desk. The scene is lit with warm, library-style lamp light, evoking a sense of success, prestige, and academic achievement. The color palette consists of deep browns, gold accents, and ivory paper tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7e3OvkFsFWAfTeOjP3d4IwKvoBJrdClXBSMIdkM_6lrM0jin5viUKbk7mGr4fWhqvVXS_vpg35JfAJGFhIriLAFqVG0oIr38JAFQgl8mpOrxV8w_dRz4Vym4APRgmlBHcbYw0YC8HWo64ChgUJFTvh2q2TuULHZ4S6uDFaRPQj7DcdDkWJkU2NbnI0Yq9HbMwK9y2FUo6zzQQGYjEjDMyMNXfWr9nRlTpBGxwNf48yBrczZmk6AWNhMXMiTv4ByEaz1Jlequ3Z_g"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-xs font-bold text-primary">STRATEGIC</div>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 group-hover:text-[#7c3aed] transition-colors">Admission Guidance</h3>
+<p class="text-on-surface-variant font-body-md mb-4">End-to-end support for applications, SOP drafting, and interview preparation for top-tier institutions.</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">east</span>
+</div>
+<!-- Career Counseling -->
+<div class="group cursor-pointer">
+<div class="h-64 rounded-2xl overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A professional one-on-one meeting in a contemporary glass-walled office overlooking a city skyline. A mentor and a young professional are reviewing a career roadmap on a tablet. The setting is corporate yet welcoming, with soft neutral tones and vibrant plant life in the background. The lighting is diffused and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7DWjt5QtlQ5ntqP8XDv2Hqk7NaHrEKj4PdAy9Rjdiu7b4JelK7bAuW3jZo9oYX3kAKQ5ZrmdPd54oxGARls2wMSxEf0XVLI7L5J2PQY0kspe1qH48TVvNapWdsaJd8mcgbDaE-XJm-iMZCzHtSd47N1m4fT3M1u444dmtxETu6fOuK6iz-yyLLIWJbxY6kVDNv7Qmlns-mhA5aFIIB51YwzXhtdxPL5viMSuh8c2PBk6wkLzWfza6_RLzGJoyehlfZUAy-Favs8s"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-xs font-bold text-primary">FUTURE-READY</div>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 group-hover:text-[#7c3aed] transition-colors">Career Counseling</h3>
+<p class="text-on-surface-variant font-body-md mb-4">Empowering individuals through data-driven psychometric assessments and industry-aligned career pathing.</p>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">east</span>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-none border-t border-slate-200 bg-[#f8f9fa]">
+<div class="max-w-[1280px] mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12 font-manrope text-sm text-[#4c1d95]">
+<div class="md:col-span-1">
+<span class="text-lg font-bold text-[#4c1d95] mb-4 block">Amshwa Group</span>
+<p class="text-slate-600 mb-6">Redefining excellence through a multi-disciplinary approach to consultancy and lifestyle services.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-xl opacity-60 hover:opacity-100 cursor-pointer">public</span>
+<span class="material-symbols-outlined text-xl opacity-60 hover:opacity-100 cursor-pointer">share</span>
+<span class="material-symbols-outlined text-xl opacity-60 hover:opacity-100 cursor-pointer">verified</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-[#4c1d95]">Services</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-600 hover:text-[#4c1d95] transition-colors" href="services.html">IT Consultancy</a></li>
+<li><a class="text-slate-600 hover:text-[#4c1d95] transition-colors" href="services.html">Travel Consultancy</a></li>
+<li><a class="text-slate-600 hover:text-[#4c1d95] transition-colors" href="services.html">Premium Car Wash</a></li>
+<li><a class="text-slate-600 hover:text-[#4c1d95] transition-colors" href="services.html">Education Abroad</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-[#4c1d95]">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-600 hover:text-[#4c1d95] transition-colors" href="portfolio.html">Portfolio</a></li>
+<li><a class="text-slate-600 hover:text-[#4c1d95] transition-colors" href="about.html">Careers</a></li>
+<li><a class="text-slate-600 hover:text-[#4c1d95] transition-colors" href="index.html">Privacy Policy</a></li>
+<li><a class="text-slate-600 hover:text-[#4c1d95] transition-colors" href="index.html">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-[#4c1d95]">Global Office</h4>
+<p class="text-slate-600 mb-4">1200 Financial District,<br/>Global Business Hub<br/>contact@amshwa.com</p>
+<button class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-medium text-xs">SUBSCRIBE TO NEWSLETTER</button>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-8 py-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500">
+<span>© 2024 Amshwa Group. All rights reserved.</span>
+<div class="flex gap-8">
+<span>London</span>
+<span>Dubai</span>
+<span>New York</span>
+<span>Singapore</span>
+</div>
+</div>
+</footer>
+</body></html>

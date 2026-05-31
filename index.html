@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Amshwa Consultancy Services | Empowering Businesses</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#4c1d95",
+                        "surface-container": "#16082e",
+                        "on-secondary-fixed": "#f5f3ff",
+                        "tertiary-fixed-dim": "#2e1065",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#a78bfa",
+                        "inverse-on-surface": "#000000",
+                        "background": "#0a0118",
+                        "surface-container-highest": "#1e1b4b",
+                        "outline-variant": "#2e1065",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#ddd6fe",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#4c1d95",
+                        "on-primary-container": "#c4b5fd",
+                        "surface-bright": "#16082e",
+                        "secondary-container": "#2e1065",
+                        "on-primary-fixed": "#f5f3ff",
+                        "surface": "#0a0118",
+                        "on-surface": "#f8fafc",
+                        "outline": "#4c1d95",
+                        "inverse-primary": "#c4b5fd",
+                        "surface-container-low": "#16082e",
+                        "surface-variant": "#1e1b4b",
+                        "secondary": "#8b5cf6",
+                        "on-background": "#f8fafc",
+                        "on-tertiary-container": "#ede9fe",
+                        "secondary-fixed-dim": "#7c3aed",
+                        "primary-fixed-dim": "#4c1d95",
+                        "surface-dim": "#0a0118",
+                        "primary-fixed": "#ddd6fe",
+                        "on-secondary": "#000000",
+                        "tertiary-container": "#2e1065",
+                        "on-tertiary-fixed-variant": "#ddd6fe",
+                        "tertiary": "#2e1065",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#000000",
+                        "inverse-surface": "#f8fafc",
+                        "surface-container-high": "#1e1b4b",
+                        "secondary-fixed": "#c4b5fd",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ede9fe",
+                        "primary-container": "#2e1065",
+                        "on-surface-variant": "#cbd5e1",
+                        "on-tertiary-fixed": "#f5f3ff",
+                        "on-secondary-container": "#f5f3ff",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "md": "24px",
+                        "base": "8px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "xl": "80px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        .premium-shadow {
+            box-shadow: 0 8px 30px rgba(109, 40, 217, 0.15);
+        }
+
+        .violet-border-gradient {
+            border-image: linear-gradient(to right, #4c1d95, #a78bfa) 1;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background font-body-md text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+    <!-- TopAppBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-white/95 dark:bg-slate-950/95 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-[0_8px_30px_rgb(26,43,75,0.04)]">
+        <div class="max-w-[1280px] mx-auto px-8 flex items-center justify-between h-20">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-3xl"
+                    data-icon="corporate_fare">corporate_fare</span>
+                <span class="text-2xl font-bold tracking-tight text-[#4c1d95] dark:text-white font-headline-lg">Amshwa
+                    Group</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-[#4c1d95] dark:text-white font-semibold border-b-2 border-[#7c3aed] pb-1 font-label-md"
+                    href="index.html">Home</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#7c3aed] transition-colors duration-300 font-label-md"
+                    href="services.html">Services</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#7c3aed] transition-colors duration-300 font-label-md"
+                    href="portfolio.html">Portfolio</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#7c3aed] transition-colors duration-300 font-label-md"
+                    href="about.html">About</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden sm:block bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md hover:opacity-90 transition-all cursor-pointer">
+                    Contact Us
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-primary p-2">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-b border-slate-100 p-8 space-y-6 animate-in slide-in-from-top duration-300">
+            <a class="block text-[#4c1d95] font-semibold border-l-4 border-[#7c3aed] pl-4" href="index.html">Home</a>
+            <a class="block text-slate-500 font-medium pl-4" href="services.html">Services</a>
+            <a class="block text-slate-500 font-medium pl-4" href="portfolio.html">Portfolio</a>
+            <a class="block text-slate-500 font-medium pl-4" href="about.html">About</a>
+            <a class="block bg-primary text-white px-6 py-3 rounded-lg font-label-md text-center"
+                href="contact.html">Contact Us</a>
+        </div>
+    </header>
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuButton.querySelector('span');
+            icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+    </script>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-white py-xl">
+            <div class="max-w-[1280px] mx-auto px-8 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="z-10">
+                    <span
+                        class="inline-block px-4 py-1.5 rounded-full bg-secondary-container/30 text-secondary font-label-md mb-6">
+                        Excellence Redefined
+                    </span>
+                    <h1 class="font-display-lg text-display-lg text-primary mb-6 leading-tight">
+                        Empowering Businesses, <br />
+                        <span class="text-secondary">Simplifying Services</span>
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+                        A multi-disciplinary conglomerate dedicated to excellence. From cutting-edge software solutions
+                        to premium automotive care and expert educational guidance, we bridge the gap between complexity
+                        and success.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <button
+                            class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md shadow-lg hover:translate-y-[-2px] transition-all">
+                            Get a Quote
+                        </button>
+                        <a href="contact.html"
+                            class="border-2 border-[#7c3aed] text-secondary px-8 py-4 rounded-xl font-label-md hover:bg-secondary-container/10 transition-all text-center">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl">
+                    </div>
+                    <div class="absolute -bottom-12 -left-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+                    <div class="rounded-3xl overflow-hidden premium-shadow relative z-10 border border-white/20">
+                        <img alt="Modern Corporate Office" class="w-full h-[500px] object-cover"
+                            data-alt="A high-end corporate office interior with floor-to-ceiling windows overlooking a modern city skyline. The space is furnished with minimalist, designer furniture in a color palette of navy blue and gold accents. Soft, natural daylight floods the room, creating a professional and prestigious atmosphere that aligns with a premium multi-service conglomerate."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_WE6Pv4oZ6Kz2IoR8_Nf0H9aRK7sW-jtn68tkPoJ8f7aiwPq_ZgkALpqYL9lTWJvQSWqBFyG2uSQpM6CBA0gppntEXJEub6MKU-YJ_Pwp7sHEevGsekcLj9LGVxd_vHz5s1Th_FHLtoUrp5-7T8_Y0OwEFqymvQfB6L1_TEsvZyCzFJ4HQ2S38BBJURjUmOsEeZdECIx17nnldQnANlU1AaGnmTplRLAf5-WcC4-1q0Q-08Y6tjNCkUvVXvFNrW1kmOkUIrLhSr4" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="py-xl bg-surface-container-lowest">
+            <div class="max-w-[1280px] mx-auto px-8">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Our Diverse Portfolio</h2>
+                    <p class="text-on-surface-variant max-w-2xl mx-auto font-body-md">Precision-engineered services
+                        across technology, lifestyle, and education, designed to meet the evolving needs of modern
+                        global citizens.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 md:grid-cols-2 lg:grid-cols-4">
+                    <!-- Service Card 1 -->
+                    <div
+                        class="bg-white p-md rounded-xl premium-shadow hover:translate-y-[-4px] transition-all border border-slate-50 group">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 text-on-primary group-hover:bg-secondary transition-colors">
+                            <span class="material-symbols-outlined text-3xl" data-icon="terminal">terminal</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4">Amshwa Consultancy Services</h3>
+                        <p class="text-on-surface-variant font-body-md mb-6">Expert Software & IT infrastructure
+                            solutions tailored for scaling enterprises and innovative startups seeking digital
+                            dominance.</p>
+                        <a class="text-secondary font-label-md flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="services.html">
+                            Explore IT Services <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div
+                        class="bg-white p-md rounded-xl premium-shadow hover:translate-y-[-4px] transition-all border border-slate-50 group">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 text-on-primary group-hover:bg-secondary transition-colors">
+                            <span class="material-symbols-outlined text-3xl"
+                                data-icon="local_car_wash">local_car_wash</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4">Amshwa Car Wash</h3>
+                        <p class="text-on-surface-variant font-body-md mb-6">Premium automotive detailing and
+                            restoration services that treat your vehicle with the prestige it deserves through high-end
+                            techniques.</p>
+                        <a class="text-secondary font-label-md flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="services.html">
+                            Book a Wash <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div
+                        class="bg-white p-md rounded-xl premium-shadow hover:translate-y-[-4px] transition-all border border-slate-50 group">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 text-on-primary group-hover:bg-secondary transition-colors">
+                            <span class="material-symbols-outlined text-3xl" data-icon="school">school</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4">Amshwa Educational Consultancy
+                        </h3>
+                        <p class="text-on-surface-variant font-body-md mb-6">Navigating academic futures through
+                            strategic guidance and global placement expertise for ambitious students and professionals.
+                        </p>
+                        <a class="text-secondary font-label-md flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="services.html">
+                            Consult Now <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div
+                        class="bg-white p-md rounded-xl premium-shadow hover:translate-y-[-4px] transition-all border border-slate-50 group">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 text-on-primary group-hover:bg-secondary transition-colors">
+                            <span class="material-symbols-outlined text-3xl" data-icon="flight">flight</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-4">Amshwa Travel Consultancy</h3>
+                        <p class="text-on-surface-variant font-body-md mb-6">Tailored travel solutions including global
+                            flight bookings, visa assistance, and curated holiday packages for a seamless journey.</p>
+                        <a class="text-secondary font-label-md flex items-center gap-2 group-hover:gap-3 transition-all"
+                            href="services.html">
+                            Explore Travel <span class="material-symbols-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section -->
+        <section class="py-xl bg-white relative overflow-hidden">
+            <div class="max-w-[1280px] mx-auto px-8 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Voices of Trust</h2>
+                        <p class="text-on-surface-variant font-body-lg mb-8 italic">"Amshwa Group redefined how we
+                            perceive multi-service agencies. Their IT consultancy transformed our workflow, and their
+                            attention to detail in every vertical is simply unmatched in the industry."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-full bg-slate-200">
+                                <img alt="Shamnaz K Profile" class="w-full h-full rounded-full object-cover"
+                                    data-alt="Profile photo of Shamnaz K, CEO of Amshwa Consultancy Services."
+                                    src="shamnaz-k.jpg" />
+                            </div>
+                            <div>
+                                <p class="font-bold text-primary">Shamnaz K</p>
+                                <p class="text-sm text-on-surface-variant">CEO, AMSHWA CONSULTANCY SERVICES</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-6 bg-surface-container-low rounded-2xl">
+                            <span class="text-4xl font-bold text-secondary mb-2 block">120+</span>
+                            <p class="font-label-md text-primary">Global Clients</p>
+                        </div>
+                        <div class="p-6 bg-surface-container-low rounded-2xl">
+                            <span class="text-4xl font-bold text-secondary mb-2 block">15+</span>
+                            <p class="font-label-md text-primary">Years Excellence</p>
+                        </div>
+                        <div class="p-6 bg-surface-container-low rounded-2xl">
+                            <span class="text-4xl font-bold text-secondary mb-2 block">300+</span>
+                            <p class="font-label-md text-primary">Projects Completed</p>
+                        </div>
+                        <div class="p-6 bg-surface-container-low rounded-2xl">
+                            <span class="text-4xl font-bold text-secondary mb-2 block">98%</span>
+                            <p class="font-label-md text-primary">Client Retention</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Quick Contact Strip -->
+        <section class="bg-primary text-on-primary py-12">
+            <div class="max-w-[1280px] mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div>
+                    <h3 class="font-headline-md text-headline-md mb-2">Ready to elevate your standards?</h3>
+                    <p class="text-on-primary-container font-body-md">Connect with our specialists for a tailored
+                        solution today.</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="flex items-center gap-3 px-6 py-3 bg-white/5 rounded-lg border border-white/10">
+                        <span class="material-symbols-outlined text-secondary" data-icon="call">call</span>
+                        <span class="font-label-md">+91 (7560978180) AMSHWA CONSULTANCY SERVICES</span>
+                    </div>
+                    <a href="contact.html"
+                        class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-lg font-label-md hover:bg-secondary-container/90 transition-all text-center">
+                        Quick Inquiry
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full rounded-none bg-[#f8f9fa] dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+        <div class="max-w-[1280px] mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-1">
+                <span class="text-lg font-bold text-[#4c1d95] dark:text-white mb-4 block font-headline-md">Amshwa
+                    Group</span>
+                <p class="text-slate-600 dark:text-slate-400 font-body-md mb-6 leading-relaxed">
+                    A legacy of innovation and service excellence across multiple industries. Building the future, one
+                    client at a time.
+                </p>
+                <div class="flex gap-4">
+                    <a class="text-primary hover:text-secondary transition-colors" href="#"><span
+                            class="material-symbols-outlined">public</span></a>
+                    <a class="text-primary hover:text-secondary transition-colors" href="#"><span
+                            class="material-symbols-outlined">alternate_email</span></a>
+                    <a class="text-primary hover:text-secondary transition-colors" href="#"><span
+                            class="material-symbols-outlined">share</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-label-md text-primary mb-6 uppercase tracking-wider">Services</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#4c1d95] transition-colors font-label-md"
+                            href="services.html">IT Consultancy</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#4c1d95] transition-colors font-label-md"
+                            href="services.html">Car Detailing</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#4c1d95] transition-colors font-label-md"
+                            href="services.html">Education Guidance</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#4c1d95] transition-colors font-label-md"
+                            href="services.html">Digital Strategy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-label-md text-primary mb-6 uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-4">
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#4c1d95] transition-colors font-label-md"
+                            href="portfolio.html">Portfolio</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#4c1d95] transition-colors font-label-md"
+                            href="insights.html">Insights</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#4c1d95] transition-colors font-label-md"
+                            href="about.html">Careers</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#4c1d95] transition-colors font-label-md"
+                            href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-label-md text-primary mb-6 uppercase tracking-wider">Global HQ</h4>
+                <div class="space-y-4 text-slate-600 dark:text-slate-400 font-body-md">
+                    <p class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-sm pt-1">location_on</span>
+                        Fathima Arcade Narimalam ,Chayoth, <br />NILESHWAR
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-sm">mail</span>
+                        amshwacs@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-[1280px] mx-auto px-8 py-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+            <span class="text-slate-500 dark:text-slate-400 font-label-md">© 2024 Amshwa Group. All rights
+                reserved.</span>
+            <div class="flex gap-8">
+                <a class="text-slate-500 dark:text-slate-400 hover:text-primary font-label-md" href="#">Privacy
+                    Policy</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-primary font-label-md" href="#">Terms of
+                    Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
